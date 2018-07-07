@@ -1,0 +1,83 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+
+\title{Table, Floats and Tabular }
+\author{Abhishek Raj}
+\date{\today}
+
+\begin{document}
+	\maketitle
+	
+	\section{Introduction}
+	Let's learn to make talbles.
+	
+	\subsection{The Tabular Environment}
+	
+	\begin{tabular}{ll}
+		Name & Abhishek Raj \\
+		Subject & \LaTeX	\\
+		Grade & A+		\\
+	\end{tabular}
+	
+	\subsection{Centered column}
+	\begin{tabular}{cc}
+		Name & Abhishek Raj \\
+		Subject & \LaTeX	\\
+		Grade & A+		\\
+	\end{tabular}
+	
+	\subsection{Bared column}
+	\begin{tabular}{|c|c|}
+		Name & Abhishek Raj \\
+		Subject & \LaTeX	\\
+		Grade & A+		\\
+	\end{tabular}
+
+	\subsection{vertical and horizontal line}
+	\begin{tabular}{|c|c|}
+		\hline
+		Name & Abhishek Raj \\
+		\hline
+		Subject & \LaTeX	\\
+		\hline
+		Grade & A+		\\
+		\hline
+	\end{tabular}	
+
+	\subsection{double vertical and horizontal line}
+	\begin{tabular}{|c||c|}
+		\hline
+		Name & Abhishek Raj \\
+		\hline
+		Subject & \LaTeX	\\
+		\hline \hline
+		Grade & A+		\\
+		\hline
+	\end{tabular}	
+	
+	\section {Floats: Table}
+	
+	\begin{table}[htbp]
+		\caption{My Gradebook}
+		
+		\begin{center}
+			\begin{tabular}{|c||c|}
+				\hline
+				Name & Abhishek Raj \\
+				\hline
+				Subject & \LaTeX	\\
+				\hline \hline
+				Grade & A+		\\
+				\hline
+			\end{tabular}	
+		\end{center}
+		\label{tab:grades}
+		
+	\end{table}
+	
+	\subsection{References}
+	You can see my grades in Table \ref{tab:grades}. %This is the use of label
+	
+	\section{Conclusion}
+	We have learned tables here. 
+\end{document}
